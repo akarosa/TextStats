@@ -27,6 +27,6 @@ Loop, parse, SourceString, `n`r%A_Tab%%A_Space%
 
 
 ; сделать разделитель тысяч
-MsgBox , , Статистика текста, Символов всего - %NumOfSymbols%`nСимволов без пробелов - %NumOfSymbolsWithoutSpaces%`nСлов - %NumOfWords%`n`nАбзацев - %NumOfP%`n`n`nСайт - doitq.ru
+MsgBox , , Статистика текста, Символов всего - %NumOfSymbols%`nСимволов без пробелов - %NumOfSymbolsWithoutSpaces%`nСлов - %NumOfWords%`n`nАбзацев - %NumOfP%`n`n`nСайт - 3slides.ru
 
 
