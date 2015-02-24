@@ -1,6 +1,12 @@
 #NoTrayIcon
+; TextStats
+; автор: Павел Рындин
+; Утилита для подсчета длины текста, скопированного в буфер обмена.
 
-; берем содержимое буфера обмена
+; TODO:
+; - добавить разделитель тысяч в выводе резудьтата
+
+; Берем содержимое буфера обмена
 SourceString := clipboard
 
 ; Всего символов и абзацев
@@ -26,7 +32,7 @@ Loop, parse, SourceString, `n`r%A_Tab%%A_Space%
 }
 
 
-; сделать разделитель тысяч
-MsgBox , , Статистика текста, Символов всего - %NumOfSymbols%`nСимволов без пробелов - %NumOfSymbolsWithoutSpaces%`nСлов - %NumOfWords%`n`nАбзацев - %NumOfP%`n`n`nСайт - 3slides.ru
+; Выводим результат
+MsgBox , , Статистика текста, Символов всего - %NumOfSymbols%`nСимволов без пробелов - %NumOfSymbolsWithoutSpaces%`nСлов - %NumOfWords%`n`nАбзацев - %NumOfP%`n`n`nСайт программы - 3slides.ru
 
 
